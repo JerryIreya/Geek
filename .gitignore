@@ -56,3 +56,6 @@ freeline.py
 freeline/
 freeline_project_description.json
 
+# VCS 配置文件
+.idea/vcs.xml
+# app/libs/
