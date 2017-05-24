@@ -1,6 +1,9 @@
 package cn.wang.geek
 
+import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.content.pm.ResolveInfo
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import cn.wang.geek.util.logd
@@ -21,10 +24,21 @@ class SecondActivity : AppCompatActivity() {
         logd("oncreate" + intent)
 
         textview.setOnClickListener({
-            val intent: Intent = Intent(this, SecondActivity::class.java)
+            val intent: Intent = Intent(this, ThirdActivity::class.java)
             intent.putExtra("test", "hahah")
             startActivity(intent)
         })
+
+//        val intent = Intent()
+//        intent.setClass(this, SecondActivity::class.java)
+//        val resolveActivity = packageManager.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY)
+//        val resolveActivity1 = intent.resolveActivity(packageManager)
+//
+//        logd("packagemanager.resolveActivity: " + resolveActivity)
+//        logd("intent.resolveActivity: " + resolveActivity1)
+
+
+        logd("sUserid: ${Constants.sUserId}")
     }
 
     override fun onStart() {

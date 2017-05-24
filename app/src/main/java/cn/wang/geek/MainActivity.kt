@@ -1,9 +1,9 @@
 package cn.wang.geek
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import android.support.v7.app.AppCompatActivity
+import cn.wang.geek.util.logd
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("test", "hahah")
             startActivity(intent)
         })
+
+        Constants.sUserId = 2
+        logd("sUserId: ${Constants.sUserId}")
+
+        var user: User = User("haha", 23)
     }
 
     /**
