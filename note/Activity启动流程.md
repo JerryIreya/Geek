@@ -16,3 +16,4 @@ ActivityRecord，ActivityStack的管理对象，每个Activity在AMS对应一个
 
 TaskRecord，AMS抽象出来的一个"任务"概念，是记录ActivityRecord的栈，一个"Task"包含若干个ActivityRecord。AMS用TaskRecord确保Activity启动和退出的顺序。
 
+https://www.one-tab.com/page/pfyNuDksR--1_JTUF1sUXg
